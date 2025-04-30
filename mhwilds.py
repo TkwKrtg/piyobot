@@ -25,7 +25,7 @@ class MonsterHunterWildsBot:
             return {}
         return monsters
     
-    def seggest_monster(self):
+    def suggest_monster(self):
         """
         MonsterHunterWildsに実装されているモンスターの狩猟可能なリストからランダムに1体提案する
         """

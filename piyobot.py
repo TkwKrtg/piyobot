@@ -26,10 +26,10 @@ async def on_message(message):
         return
 
     if client.user.mentioned_in(message):
-        if "おぴよ" or "<:hiyoko_goodmorning:857140570194837505>" in message.content:
+        if "おぴよ" in message.content or "<:hiyoko_goodmorning:857140570194837505>" in message.content:
             await message.channel.send('<:hiyoko_goodmorning:857140570194837505>')
-        if "一狩り" or "ひと狩り" or "モンハンワイルズ" or "MHWilds" or "なに狩ろ" or "何狩ろ" or "なに狩る" or "何狩る" in message.content:
-            mhsuggestion = mhwilds_list.seggest_monster()
+        if "一狩り" in message.content or "ひと狩り" in message.content or "モンハンワイルズ" in message.content or "MHWilds" in message.content or "なに狩ろ" in message.content or "何狩ろ" in message.content or "なに狩る" in message.content or "何狩る" in message.content:
+            mhsuggestion = mhwilds_list.suggest_monster()
             await message.channel.send(mhsuggestion)
             await message.channel.send("<:hiyoko_hitokari:1001692854646751332><:hiyoko_karyoku:1011457279003992125>")
         else:
